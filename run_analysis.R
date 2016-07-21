@@ -109,7 +109,7 @@ library(dplyr)
 #install.packages(Rcpp)
 #library(Rcpp)
 #?aggregate
-TidyDataSet2<-aggregate(. ~subject + activity, MergedData, mean)
+TidyDataSet2<-aggregate(. ~subject + activity, MeasurementData, mean)
 TidyDataSet2 <-TidyDataSet2[order(TidyDataSet2$subject, TidyDataSet2$activity),]
 head(TidyDataSet2)
 
